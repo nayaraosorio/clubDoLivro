@@ -12,7 +12,12 @@ Bem-vindo ao repositório oficial do site do Clube do Livro! Nossa proposta é c
 - Página para que os membros se apresentem.
 - Organização em cards com fotos e gêneros literários preferidos.
 - Opção para os membros compartilharem seus perfis literários nas redes sociais.
-- Formulário de inscrição para novos membros interessados.
+
+## Página de Login:
+- Página onde os membros podem fazer login com suas credenciais pessoais.
+- Acesso restrito a conteúdo exclusivo para membros, como interações privadas e participação nos fóruns.
+- Integração com o formulário de inscrição para novos membros interessados em se juntar ao clube, proporcionando uma transição suave entre registro e participação ativa.
+
 
 ## Troca/Venda e doação de Livros:
 - Facilitar a interação entre os membros para troca, venda ou doação de livros.
