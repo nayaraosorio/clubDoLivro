@@ -39,6 +39,6 @@ Conto com o talento e as sugestões de todos para tornar o site do Clube do Livr
 - Beatriz Candido
 - Rodrigo Melo
 - Jayane Darla
-- Josias Croft
+- Josias Junior
 
 
