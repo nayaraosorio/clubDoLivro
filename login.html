@@ -3,38 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="login.css" rel="stylesheet"/>
     <title>Tela_LOGIN</title>
 </head>
 
 <body>
-    <main>
-        <section>
-            <h1>Boas-Vindas ao Club do livro</h1>
-            <h2>Imagine um Club em que você faça parte. Sempre!</h2>
-            <form action="" >
-                <label for="nome">Login:</label>
-                <br>
-                <input id="nome" name="nome" type="text">
-                <br>
-                <label for="nome">Nome:</label>
-                <br>
-                <input id="nome" name="nome" type="text"> 
-                <br>
-                <label for="senha">Senha:</label>
-                <br>
-                <input id="senha" name="senha" type="password" />
-                <br>
-                <button id="button">CONTINUE</button> 
-            </form>
+    <div id="form">
+        <form action="">
+            <h1 class="title">Boas-Vindas ao Club do livro</h1>
+            <h2 class="subtitle">Imagine um Club em que você faça parte. Sempre!</h2>
+            
+            <label for="Login">Login:</label>
+            <div class="input">
+                <input id="Login" name="Login" type="text">
+            </div>
 
-            <footer> 
-                <h6>Conheça também nossas redes sociais</h6> 
-                <a href="http://">Instagram</a>
-                <br> <a href="http://Faceboock">Faceboock</a>
-                <br> <a href="http://">Twitter</a>
-                <br> <a href="http://">Pinterest</a> 
-            </footer>
-        </section>
-    </main>
+            <label for="username">Nome:</label>
+            <div class="input">
+                <input id="username" name="username" type="text"> 
+            </div>
+
+            <label for="senha">Senha:</label>
+            <div class="input">
+                <input id="senha" name="senha" type="password">
+            </div>
+
+            <div id="btn">
+                <button type="submit">CONTINUE</button>
+            </div> 
+        </form>
+    </div>
+
+    <footer> 
+        <h6>Conheça também nossas redes sociais</h6> 
+        <a href="http://">Instagram</a>
+        <br> <a href="http://Faceboock">Faceboock</a>
+        <br> <a href="http://">Twitter</a>
+        <br> <a href="http://">Pinterest</a> 
+    </footer>
 </body>
 </html>
