@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/encontros.css">
+    <link rel="stylesheet" href="headerFooter.css">
 
     <title>Clube do Livro - Encontros</title>
 </head>
 <body>
     <header>
-        <img src="imagens/Screenshot from 2023-08-17 13-35-36.png"alt="Logo de Clube do Livro" width="200">
-        <h1>Clube do Livro</h1>
+        <h1><img src="imagens/logoClubeDoLivro.png"alt="Logo de Clube do Livro" width="200"></h1>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Membros</li>
-                <li>Trocas/Vendas</li>
-                <li>Encontros</li>
-                <li>Fórum de Discussão</li>
+                <li><a href="home.3.html">Home</a></li>
+                <li><a  href="membros.html">Membros</a></li>
+                <li><a href="index.html">Trocas/Vendas</a></li>
+                <li><a href="encontros.html">Encontros</a></li>
+                <li><a href="discussao.html">Fórum de Discussão</a></li>
                 
             </ul>
         </nav>
@@ -30,7 +32,7 @@
 
 
 
-    <main>
+    <main class="content">
         <section>
             <div class="container">
                 <h2>Encontre lives que combinam com o seu gosto literário. É grátis!</h2>
@@ -63,14 +65,12 @@
             </div>
         </section>
     </main>
-
-
-
-    <footer>
-        <footer>
-            <p>&copy; 2023 Clube do Livro</p>
-        </footer>
-        
+    <footer class="footer">
+        <a href="https://github.com/nayaraosorio/clubeDoLivro"><ion-icon name="logo-github"></ion-icon></a> 
+         <ion-icon name="logo-instagram"></ion-icon>
+         <ion-icon name="logo-tumblr"></ion-icon>
+         <ion-icon name="logo-facebook"></ion-icon>
+         <p>&copy; 2023 Clube do Livro</p>
     </footer>
 </body>
 </html>
