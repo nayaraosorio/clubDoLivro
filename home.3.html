@@ -7,6 +7,7 @@
             <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
             <link rel="stylesheet" href="headerFooter.css">
             <title>Clube do Livro - Home</title>
+            <link rel="stylesheet" href="style.home.css">
         </head>
         <body>
             <header>
@@ -23,31 +24,48 @@
                 </nav>
             </header>
 
-            <main class="content">
-                <section>
-                    <h2>Livros em destaque</h2>
-                 
-                     <img src="imagens/WhatsApp Image 2023-08-16 at 22.44.29.jpeg"alt="livro em destaque a guerra que salvou minha vida"
-                     br>
-                               <p> Guerra que salvou minha vida</p>
-                               <p>Autora: Kimberly Broodley:</p>
-                 
-                             <img src="imagens/WhatsApp Image 2023-08-16 at 22.42.34 (2).jpeg"alt="livro em destaque é assim que acaba"
-                     br>
-                                         <p>É assim que acaba</p> 
-                                         <p>Autora: Collen Hoover</p>
-                </section>
-             
-             <section>
-                 <h2>Junte-se a Nós</h2>
-                 <p>Seja parte de nossa comunidade de amantes da leitura!</p>
-                 <a href="#" class="cta-button">Inscreva-se Agora</a>
-             </section>
-                     <h2>O que nossos membros dizem</h2>
-                     "O clube da Leitura me proporcionou uma jornada literária incrível.As discussões são sempre enriquecedoras."
-                     <cite>Carol</cite>
-             </div>
-            </main>
+           <!-- Swiper -->
+  
+    <h2> Livros em destaque</h2>
+
+    <section class="slider">
+      <input name='slide' type="radio" >
+      <input name='slide' type="radio" checked>
+      <input name='slide' type="radio">
+      <input name='slide' type="radio">
+  
+      <div class="slider-content">
+          <div class="slider-item"> <img src="./imagens/e_assim_que_acaba_romance.webp" alt="É Assim Que Acaba"></div>
+          <div class="slider-item"> <img src="./imagens/Guerra Que Salvou A Minha Vida.webp" alt="Guerra Que Salvou A Minha Vida">2</div>
+          <div class="slider-item"> <img src="./imagens/Talvez Você Deva Conversar_auto.webp" alt="Talvez Você Deva Conversar Com Alguém"></div></div>
+          <div class="slider-item"> <img src="./imagens/O Poder Do Agora_auto.webp" alt="O Poder Do Agora"></div></div>
+      </div>
+    </section>
+  <h2>Depoimentos </h3>
+  <section class="cards" >
+    <div class="card">
+      <img class="user" img src="./imagens/menina-sorridente-na-biblioteca-estudando-e-usando-o-laptop.jpg">
+            
+      <div class="stars">
+        <img class="star" img src="./imagens/cinco-estrelas-douradas-para-excelente-avaliacao-do-cliente-apos-o-uso-do-conceito-de-produto-e-servico-por-renderizacao-3d.jpg">
+
+      </div>
+      <p> Estou amando o clube de leitura, pois aqui eu posso conversar, desabafar e contar minhas perspectivas sobre aquela narrativa que está mexendo comigo. Coisas que não dá pra fazer com um amigo, rsrs...</p> 
+      <p>Carol</p>
+        
+
+    </div>
+
+    
+  </section>
+         
+  </body>
+   
+ 
+
+                
+                
+           
             <footer class="footer">
                 <a href="https://github.com/nayaraosorio/clubeDoLivro"><ion-icon name="logo-github"></ion-icon></a> 
                  <ion-icon name="logo-instagram"></ion-icon>
