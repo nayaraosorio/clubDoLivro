@@ -17,15 +17,17 @@ body {
 
     }
 
-    .slider-content img{
-      size:50%;
+    .slider-item {
+      size: 100px;
+  
     }
 
   .slider{
       overflow: hidden;
+      
   
   }
-  .slider > .slider-content{
+  .slider > .slider-content {
       display: flex;
       flex-wrap: nowrap;
       width: 100%;
@@ -67,7 +69,7 @@ body {
 
  h2 {
   display:flex;
-  justify-content: right;
+  justify-content: center;
   margin: 5rem 0 5rem 0;
   font-size:20px;
 
