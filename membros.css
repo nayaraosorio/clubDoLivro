@@ -1,0 +1,94 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background: #f3bda9;
+}
+
+.description{
+    font-size: 20px;
+    line-height: 30px;
+    width: auto;
+}
+
+#form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 10px;
+    padding: 50px;
+    width: min-content;
+    align-items: center;
+}
+
+.title{
+    font-size: 1.8em;
+    margin-bottom: 10%;
+}
+
+.input{
+    min-width: 280px;
+    border-radius: 22px;
+    border: 2px #8fd8d2 solid;
+    padding: 5px;
+    margin:  12px -5x;
+}
+
+
+.input input{
+    width: 100%;
+    border: none;
+    outline: none;
+    transform: translateY(-10%);
+    color: #2b344b;
+    font-size: 11pt;
+}
+
+.genero-input select {
+    width: 100%; /* Preencher toda a largura da div */
+    border: none;
+    outline: none;
+    transform: translateY(-10%);
+    color: #2b344b;
+    font-size: 11pt;
+    
+  }
+
+
+.select-input select {
+    width: 100%; /* Preencher a largura da div */
+    width: 100%; /* Preencher toda a largura da div */
+    border: none;
+    outline: none;
+    transform: translateY(-10%);
+    color: #2b344b;
+    font-size: 11pt;
+  }
+
+.register-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Estilo para os botões de cadastro */
+.final-button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px;
+        border: 1px solid #ccc;
+        background-color: #07c123; /* Cor de fundo */
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+
+.final-button {
+        background-color: #4285F4; /* Cor de fundo  */
+    }
+
+.final-button:hover {
+        background-color: #0e63c0; /* Cor de fundo ao passar  */
+    }
