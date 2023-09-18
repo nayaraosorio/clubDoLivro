@@ -33,83 +33,87 @@
 </header>
 
 
-<div class="description">
-  <h2 class="description">Explore mundos infinitos, mergulhe em histórias envolventes e compartilhe suas paixões literárias com outros leitores como você.
-     No Clube do Livro, oferecemos uma plataforma onde você pode descobrir novos livros, participar de discussões apaixonadas e fazer parte de encontros especiais com outros apaixonados por literatura. Seja você um devorador de romances, um entusiasta de ficção científica ou um amante de clássicos, há um lugar para você aqui.</h2>
- </div>
-  
+<h1>Apresente-se na Nossa Comunidade de Leitores</h1>
+<div class="intro-text">Bem-vindo à página de membros do Clube do Livro, o lugar onde nossa incrível comunidade de leitores se conecta e compartilha sua paixão pela leitura! Aqui, você pode se apresentar e fazer parte deste mundo literário vibrante. Veja o que você pode fazer nesta página:
 
-    <div id="form">
-      <form action="">
-          <h1 class="title">Explore sua criatividade</h1>
-          <h3 class="subtitle">Cadastre-se agora e embarque em uma aventura que vai enriquecer sua vida e sua estante de livros!</h3>
-           
-          <label for="username">Nome:</label>
-          <div class="input">
-            <input id="username" name="Nome" type="text">
-          </div>
+<ol>
+    <li><strong>Apresente-se com Estilo:</strong> Compartilhe um pouco mais sobre você em nossos elegantes cards de perfil. Mostre seu rosto e liste seus gêneros literários preferidos para que os outros membros possam conhecê-lo melhor.</li>
+    <li><strong>Fotos e Gêneros Literários:</strong> Nossos cards de perfil são organizados para destacar sua foto e seus gostos literários. Eles fornecem uma maneira fácil e atraente de apresentar quem você é e o que você ama ler.</li>
+    <li><strong>Conexões Literárias:</strong> Quer compartilhar ainda mais sobre suas aventuras literárias? Oferecemos a opção de vincular seus perfis literários nas redes sociais, para que você possa se conectar com outros leitores e explorar suas recomendações e resenhas.</li>
+    <li><strong>Junte-se à Comunidade:</strong> Se você ainda não é membro, não se preocupe! Você pode se cadastrar em apenas alguns passos e começar a interagir com nossa comunidade apaixonada pela leitura. Sua jornada literária começa aqui!</li>
+    <li><strong>Descubra Novos Amigos Literários:</strong> Explore os perfis dos outros membros, encontre pessoas com gostos literários semelhantes e faça novas amizades que compartilham sua paixão por livros. Juntos, vamos descobrir e discutir novos mundos através das palavras!</li>
+</ol>
+Esta é a sua chance de brilhar e compartilhar sua paixão pela leitura. Não se acanhe, estamos ansiosos para conhecer vocês e descobrir mais sobre seus gêneros literários preferidos, suas histórias favoritas e as aventuras que os livros os levaram. Sinta-se à vontade para preencher o formulário abaixo e se apresentar para a nossa incrível comunidade de leitores. Juntos, vamos criar um espaço onde a magia das palavras nos conecta e nos inspira.
+</div>
 
-          <label for="surname">Sobrenome:</label>
-          <div class="input">
-            <input id="surname" name="surname" type="text"> 
-          </div>
+    <div class="member-introduction">
+    <h2>Apresente-se</h2>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br>
 
-          <label for="genero">Gênero:</label>
-          <div class="input genero-input">
-           <select id="genero" name="genero">
-              <option value="Masculino">Masculino</option>
-              <option value="Feminino">Feminino</option>
-              <option value="Outro">Outro</option>
-              </select>
-          </div>
+        <label for="foto">Foto:</label>
+        <input type="file" id="foto" name="foto" accept="image/*"><br>
 
-          <label for="dataNascimento">Data de Nascimento:</label>
-          <div class="input">
-            <input id="dataNascimento" name="dataNascimento" type="date">
-          </div>
+        <label for="generos">Gêneros Literários Preferidos:</label>
+        <input type="text" id="generos" name="generos" required><br>
 
-         <!-- Campo para selecionar o gênero literário -->
-         <label for="generoLiterario">Gênero Literário de Sua Escolha:</label>
-         <div class="input select-input"> <!-- Adicionei uma classe "select-input" -->
-          <select id="generoLiterario" name="generoLiterario">
-           <option value="Ficção Científica">Ficção Científica</option>
-           <option value="Romance">Romance</option>
-           <option value="Suspense">Suspense</option>
-           <option value="Mistério">Mistério</option>
-           <option value="Desenvolvimento Pessoal">Desenvolvimento Pessoal</option>
-           <option value="Fantasia">Fantasia</option>
-           <option value="Não Ficção">Não Ficção</option>
-           <option value="Fantasia Épica">Fantasia Épica</option>
-           <option value="Outro">Outro</option>
-          </select>
-        </div>
-          
-        <label for="email">Email:</label>
-         <div class="input">
-          <input id="email" name="email" type="email">
-         </div>
+        <label for="twitter">Link do Twitter:</label>
+        <input type="text" id="twitter" name="twitter"><br>
 
-          <label for="senha">Senha:</label>
-          <div class="input">
-            <input id="senha" name="senha" type="password">
-          </div>
+        <label for="tumblr">Link do instagram:</label>
+        <input type="text" id="instagram" name="instagram"><br>
 
-          <label for="senha">Confirme Senha:</label>
-          <div class="input">
-            <input id="senha2" name="senha" type="password">
-          </div>
+        <label for="facebook">Link do Facebook:</label>
+        <input type="text" id="facebook" name="facebook"><br>
 
-          <div class="register-button">
-            <a href="#" class="final-button">Finalizar cadastro</a>
-          </div>
-        
-       
-      </form>
-   
+        <label for="apresentacao">Apresentação:</label><br>
+        <textarea id="apresentacao" name="apresentacao" rows="4" cols="50"></textarea><br>
+
+        <input type="submit" value="Enviar">
+    </form>
     </div>
-        
+
+<div class="member-card" id="member-card">
+    <img id="member-photo" src="foto1.jpg" alt="Membro 1">
+    <h2>Nome do Membro 1</h2>
+    <p>Gêneros Literários Preferidos: Romance, Mistério</p>
+    <div class="social-links">
+        <a href="https://www.facebook.com/membro1" target="_blank">Facebook</a>
+        <a href="https://twitter.com/membro1" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com/membro1" target="_blank">Instagram</a>
+    </div>
+    <p>Apresentação: Aqui está uma breve descrição do Membro .</p>
+</div>
+
+
+<div class="member-card">
+    <img src="foto2.jpg" alt="Membro 2">
+    <h2>Nome do Membro 2</h2>
+    <p>Gêneros Literários Preferidos: Fantasia, Ficção Científica</p>
+    <div class="social-links">
+        <a href="https://www.facebook.com/membro1" target="_blank">Facebook</a>
+        <a href="https://twitter.com/membro1" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com/membro1" target="_blank">Instagram</a>
+    </div>
+    <p>Apresentação: Aqui está uma breve descrição do Membro 2.</p>
+</div>
+
+<div class="member-card">
+    <img src="foto2.jpg" alt="Membro 3">
+    <h2>Nome do Membro 2</h2>
+    <p>Gêneros Literários Preferidos: Fantasia, Ficção Científica</p>
+    <div class="social-links">
+        <a href="https://www.facebook.com/membro1" target="_blank">Facebook</a>
+        <a href="https://twitter.com/membro1" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com/membro1" target="_blank">Instagram</a>
+    </div>
+    <p>Apresentação: Aqui está uma breve descrição do Membro 3.</p>
+</div>
+
     
-    </main>
+<!-- Adicione mais membros conforme necessário -->
+
 
 
     <footer class="footer">
