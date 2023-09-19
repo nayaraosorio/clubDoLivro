@@ -13,7 +13,7 @@ header {
     text-align: center;
 }
 header img {
-    width: 400px;
+    width: 250px;
     display: block;
     margin: 0 auto; /* Centraliza a imagem */
 }
@@ -48,6 +48,17 @@ footer {
 }
 ion-icon{
     color: black;
+}
+.login{
+    position:absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+.login ion-icon{
+    color:#DF744A;
+    width: 20px;
+    height: 20px;
 }
 .content{
     min-height: calc(100% - 100px);
