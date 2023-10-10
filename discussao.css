@@ -30,28 +30,6 @@ color: #333;
 
 }
 
-  
-
-.card {
-
-border: 1px solid #ccc;
-
-padding: 10px;
-
-margin-bottom: 20px;
-
-}
-
-  
-
-.card img {
-
-max-width: 100%;
-
-}
-
-  
-
 form label {
 
 font-weight: bold;
@@ -105,24 +83,12 @@ background-color: #1c2833;
 /* Estilos para os destaques do mês */
 
   
-
-.destaques {
-
-display: flex;
-
-flex-wrap: wrap;
-
-justify-content: space-between;
-
-}
-
-  
-
 .card {
 
-flex: 1;
+flex-basis: calc(10% - 20px); /*Largura dos Cards*/
 
 background-color: #fff;
+width: 250px;
 
 border: 1px solid #ccc;
 
@@ -135,7 +101,7 @@ padding: 20px;
 text-align: center;
 
 transition: transform 0.3s ease; /* Efeito de transição suave */
-
+box-sizing: border-box;
 }
 
   
@@ -153,6 +119,7 @@ transform: scale(1.05); /* Efeito de aumento de escala no hover */
 max-width: 100%;
 
 height: auto;
+border-radius: 5px;
 
 }
 

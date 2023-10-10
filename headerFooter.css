@@ -6,6 +6,7 @@ body {
     padding: 0;
 }
 
+/* Estilo do Cabeçalho */
 header {
     background-color: #8fd8d2;
     color: #DF744A;
@@ -17,7 +18,7 @@ header img {
     display: block;
     margin: 0 auto; /* Centraliza a imagem */
 }
-
+/* Estilo da Navegação */
 nav ul {
     list-style: none;
     padding: 0;
@@ -36,6 +37,8 @@ header a:link{
 header a:visited{
     color: #DF744A;;
 }
+
+/* Estilo do rodapé */
 footer {
     background-color: #8fd8d2;
     color: white;
