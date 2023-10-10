@@ -1,155 +1,213 @@
-main.content {
-
-
-margin: 0 auto;
-
-padding: 20px;
-background: #f3bda9;
-display: flex;
-flex-direction: column;
-
-
+/* Estilo geral para o conteúdo principal (main) */
+.main {
+    background-color: #FEF9F6; /* Cor de fundo (FEF9F6) */
+    color: #000000; /* Cor do texto (preto) */
+    padding: 20px; /* Espaçamento interno para melhor leitura */
 }
 
-  
-
-section {
-
-margin-bottom: 20px;
-
+/* Estilo para os títulos do conteúdo principal */
+.main h2 {
+    color: #dc8239; /* Cor do título (Lemon) */
 }
-.discussao{
+
+/* Estilo para links no conteúdo principal */
+.main a {
+    color: #df744a; /* Cor dos links (Warm) */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+}
+
+.main a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre os links */
+}
+
+/* Estilo para a imagem no conteúdo principal */
+#forum {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+figure {
     text-align: center;
 }
 
-h2 {
-
-font-size: 24px;
-
-color: #333;
-
-}
-
-form label {
-
-font-weight: bold;
-
-}
-
-  
-
-form select,
-
-form input[type="number"],
-
-form textarea,
-
-form input[type="submit"] {
-
-width: 100%;
-
-padding: 10px;
-
-margin-bottom: 15px;
-
-border: 1px solid #ccc;
-
-border-radius: 4px;
-
-font-size: 16px;
-
-}
-
-  
-
-form input[type="submit"] {
-
-background-color: #2c3e50;
-
-color: white;
-
-cursor: pointer;
-
-}
-
-  
-
-form input[type="submit"]:hover {
-
-background-color: #1c2833;
-
-}
-
-/* Estilos para os destaques do mês */
-
-  
+/* Estilo para os cards de livros */
 .card {
-
-flex-basis: calc(10% - 20px); /*Largura dos Cards*/
-
-background-color: #fff;
-width: 250px;
-
-border: 1px solid #ccc;
-
-border-radius: 4px;
-
-margin: 10px;
-
-padding: 20px;
-
-text-align: center;
-
-transition: transform 0.3s ease; /* Efeito de transição suave */
-box-sizing: border-box;
+    background-color: #FEF9F6; /* Cor de fundo dos cards */
+    border: 1px solid #ccc; /* Borda com cor cinza */
+    border-radius: 10px; /* Borda arredondada nos cards */
+    padding: 20px; /* Espaçamento interno dentro dos cards */
+    margin-bottom: 20px; /* Espaçamento entre os cards */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sutil sombra nos cards */
 }
 
-  
-
-.card:hover {
-
-transform: scale(1.05); /* Efeito de aumento de escala no hover */
-
+/* Estilo para as imagens dentro dos cards */
+.card img {
+    max-width: 100%; /* Imagens ajustam automaticamente ao tamanho do card */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Define a imagem como um elemento de bloco */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
 }
 
-  
+/* Estilo para o botão "Ver Mais" nos cards */
+.card button {
+    background-color: #df744a; /* Cor do botão (Warm) */
+    color: #FEF9F6; /* Cor do texto no botão (branco) */
+    border: none; /* Remove a borda do botão */
+    padding: 10px 20px; /* Espaçamento interno no botão */
+    border-radius: 5px; /* Borda arredondada no botão */
+    cursor: pointer; /* Altera o cursor para um ponteiro ao passar sobre o botão */
+    transition: background-color 0.3s; /* Efeito de transição suave */
+}
+
+.card button:hover {
+    background-color: #dc8239; /* Cor do botão ao passar o mouse (Lemon) */
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribuir os cards igualmente na linha */
+    margin: 20px;
+}
+
+.card {
+    width: calc(33.33% - 20px); /* Largura fixa para cada card, ajuste conforme necessário */
+    margin: 10px; /* Espaçamento entre os cards */
+    border: 1px solid #ccc; /* Adiciona uma borda com cor cinza */
+    padding: 10px; /* Espaçamento interno dentro do card */
+    box-sizing: border-box; /* Garante que a borda e o padding não afetem a largura do card */
+    /* Resto dos estilos do card */
+    border-radius: 10px;
+}
 
 .card img {
-
-max-width: 100%;
-
-height: auto;
-border-radius: 5px;
-
+    max-width: 100%;
+    height: auto;
 }
 
-  
-
-.card h3 {
-
-font-size: 18px;
-
-margin: 10px 0;
-
+/* Estilize o formulário de comentários e a imagem */
+.comentarios-form-img-container {
+    display: flex; /* Use flexbox para criar o layout lado a lado */
+    align-items: flex-start; /* Alinhe os itens ao topo do contêiner */
+    margin-top: 20px; /* Espaçamento acima do formulário e da imagem */
 }
 
-  
-
-.card p {
-
-font-size: 14px;
-
-color: #777;
-
+/* Estilize o contêiner do formulário de comentários */
+.comentarios-form-container {
+    flex: 1; /* Ocupa a maior parte do espaço disponível */
+    background-color: #FEF9F6; /* Cor de fundo do formulário */
+    border: 1px solid #ccc; /* Borda cinza ao redor do formulário */
+    border-radius: 10px; /* Borda arredondada no formulário */
+    padding: 20px; /* Espaçamento interno dentro do formulário */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sutil sombra no formulário */
 }
 
-#forum{
-
-width: 100%;
-max-width: 500px;
-height: auto;
-border-radius: 20px;
+/* Estilize o contêiner da imagem */
+.img-container {
+    flex: 2; /* Ocupa a mesma quantidade de espaço que o formulário */
+    padding-left: 20px; /* Espaçamento à esquerda para criar espaço entre o formulário e a imagem */
 }
-figure{
-    text-align: center;
+
+.img-container img {
+    max-width: 500px; /* Imagem ajusta automaticamente ao tamanho do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+#voaLivro{
+    max-width: 800px;
+    border-radius: 20px;
+}
+/* Estilize o formulário de comentários */
+#comentarios-form {
+    background-color: #FEF9F6; /* Cor de fundo do formulário */
+    border: 1px solid #ccc; /* Borda cinza ao redor do formulário */
+    border-radius: 10px; /* Borda arredondada no formulário */
+    padding: 20px; /* Espaçamento interno dentro do formulário */
+    margin-top: 20px; /* Espaçamento acima do formulário */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sutil sombra no formulário */
+}
+
+/* Estilize os rótulos (labels) do formulário */
+#comentarios-form label {
+    color: #dc8239; /* Cor dos rótulos (Lemon) */
+    font-weight: bold; /* Texto em negrito nos rótulos */
+    display: block; /* Coloca cada rótulo em uma linha separada */
+    margin-bottom: 10px; /* Espaçamento abaixo de cada rótulo */
+}
+
+/* Estilize os campos de entrada de texto */
+#comentarios-form input[type="text"],
+#comentarios-form select,
+#comentarios-form textarea {
+    width: 100%; /* Os campos ocupam 100% da largura do formulário */
+    padding: 10px; /* Espaçamento interno nos campos de entrada */
+    margin-bottom: 15px; /* Espaçamento abaixo de cada campo */
+    border: 1px solid #ccc; /* Borda cinza nos campos de entrada */
+    border-radius: 5px; /* Borda arredondada nos campos de entrada */
+    background-color: #FEF9F6; /* Cor de fundo dos campos de entrada */
+}
+
+/* Estilize o botão de envio */
+#comentarios-form input[type="submit"] {
+    background-color: #df744a; /* Cor do botão (Warm) */
+    color: #FEF9F6; /* Cor do texto no botão (branco) */
+    border: none; /* Remove a borda do botão */
+    padding: 10px 20px; /* Espaçamento interno no botão */
+    border-radius: 5px; /* Borda arredondada no botão */
+    cursor: pointer; /* Altera o cursor para um ponteiro ao passar sobre o botão */
+    transition: background-color 0.3s; /* Efeito de transição suave */
+}
+
+/* Efeito de cor ao passar o mouse sobre o botão de envio */
+#comentarios-form input[type="submit"]:hover {
+    background-color: #dc8239; /* Cor do botão ao passar o mouse (Lemon) */
+}
+
+/* Estilize a área de comentários estilo post-it */
+.comentarios-container {
+    background-color: #F7E8DC; /* Cor de fundo da área de comentários */
+    border: 2px solid #dc8239; /* Borda destacada (Lemon) */
+    border-radius: 10px; /* Borda arredondada */
+    padding: 20px; /* Espaçamento interno dentro da área de comentários */
+    margin-top: 20px; /* Espaçamento acima da área de comentários */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sutil sombra na área de comentários */
+}
+
+/* Estilize o título "Comentários" dentro da área */
+.comentarios-container h2 {
+    color: #dc8239; /* Cor do título (Lemon) */
+    font-size: 24px; /* Tamanho da fonte do título */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+}
+
+/* Estilize os comentários individuais (post-its) */
+.comentario {
+    background-color: #F7E8DC; /* Cor de fundo dos comentários */
+    border: 2px solid #dc8239; /* Borda destacada (Lemon) */
+    border-radius: 10px; /* Borda arredondada */
+    padding: 20px; /* Espaçamento interno dentro dos comentários */
+    margin: 10px; /* Espaçamento entre os comentários */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sutil sombra nos comentários */
+    display: inline-block; /* Faz com que os comentários fiquem lado a lado */
+}
+
+/* Estilize o título "Comentários" dentro da área */
+.comentario h2 {
+    color: #dc8239; /* Cor do título (Lemon) */
+    font-size: 24px; /* Tamanho da fonte do título */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+}
+
+/* Estilize os comentários individuais */
+.comentario .autor {
+    color: #dc8239; /* Cor do nome do autor (Lemon) */
+    font-weight: bold; /* Texto em negrito no nome do autor */
+}
+
+/* Estilize o texto do comentário */
+.comentario .texto {
+    margin-top: 5px; /* Espaçamento acima do texto do comentário */
 }
