@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
         const autorComentario = document.createElement('p');
         autorComentario.classList.add('autor');
-        autorComentario.textContent = `Usuário: ${nome}`;
+        autorComentario.textContent = ` ${nome}`;
     
         const livroComentario = document.createElement('p');
         livroComentario.classList.add('livro');
@@ -45,9 +45,19 @@ document.addEventListener("DOMContentLoaded", function () {
         curtidas++;
         contadorCurtidas.textContent = curtidas;
     }
-    
+    // Função para criar um elemento HTML
+    function criarElemento(tagName, className, textContent) {
+        const element = document.createElement(tagName);
+        if (className) {
+            element.classList.add(className);
+        }
+        if (textContent) {
+            element.textContent = textContent;
+        }
+        return element;
+    }
 
-    // Função para lidar com o envio do formulário
+    // Função envio do formulário
     function enviarComentario(event) {
         event.preventDefault();
 
@@ -59,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const livro = livroInput.value;
         const texto = comentarioInput.value;
 
-        // Validação robusta do campo "Nome"
+        // Validação "Nome""
         if (!nome || !contemApenasLetras(nome)) {
             alert('Por favor, insira um nome válido (apenas letras e sem espaços em branco).');
             nomeInput.focus();
@@ -74,19 +84,18 @@ document.addEventListener("DOMContentLoaded", function () {
         adicionarComentario(nome, livro, texto);
         nomeInput.value = '';
         comentarioInput.value = '';
-        // Atualize as opções do formulário de livros após adicionar o comentário
         atualizarOpcoesLivros();
     }
 
 
-    // Função para atualizar as opções do formulário de livros
+    // Função que troca os livros 
     function atualizarOpcoesLivros() {
         const selectLivro = document.getElementById("livro");
 
         // Limpa todas as opções existentes
         selectLivro.innerHTML = "";
 
-        // Obtém os títulos dos livros dos destaques do mês
+        // títulos
         const livrosDestaque = document.querySelectorAll('.card h3');
 
         // Crie e adicione as novas opções ao select
@@ -116,16 +125,14 @@ document.addEventListener("DOMContentLoaded", function () {
         const buttonLivro1 = document.createElement('button');
         buttonLivro1.textContent = 'Ver Mais';
         sinopseLivro1.parentNode.appendChild(buttonLivro1);
-
-        // Atribua um ID ao botão para facilitar a identificação
         buttonLivro1.id = 'buttonLivro1';
 
-        // Defina um evento de clique para o botão "Ver Mais" do livro 1
+        // Evento de click
         buttonLivro1.addEventListener('click', function () {
             toggleSinopse(sinopseLivro1, sinopseCompletaLivro1, buttonLivro1);
         });
 
-        livro1.querySelector('img').src = 'imagens/agir-pensar-gato.jpg';
+        livro1.querySelector('img').src = '/imagens/agir-pensar-gato.jpg';
 
         // Livro 2
         const livro2 = document.getElementById('livro2');
@@ -134,7 +141,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const sinopseLivro2 = livro2.querySelector('.sinopse');
         sinopseLivro2.textContent = 'A vida adulta não é fácil. E quem nunca fuxicou as redes sociais de amigos bem-sucedidos, só para se comparar, e acabou se sentindo pior ainda, que atire a primeira pedra.';
         const sinopseCompletaLivro2 = 'A vida adulta não é fácil. Quem nunca deu uma olhada nas redes sociais de amigos bem-sucedidos, só para se comparar, e acabou se sentindo ainda pior? Neste livro, a autora compartilha suas próprias histórias, desde as vergonhosas até as mais sérias, como a luta contra a depressão e o transtorno obsessivo-compulsivo. Com leveza e bom humor, ela extrai lições valiosas dessas experiências. Este livro está repleto de conselhos amigáveis sobre como cuidar de si mesmo, como procurar ajuda, não importa quais sejam seus problemas, e como abraçar aquilo que te faz feliz, seja uma banda que você adora ou uma maratona da Netflix. Beth Evans, uma contadora de histórias supercriativa, utiliza seus desenhos para complementar suas palavras, adicionando um toque único de humor. Com mais de 217 mil seguidores no Instagram, ela faz as pessoas rirem e se sentirem acolhidas ao encontrar humor nas situações cotidianas. "Diário de uma ansiosa ou como parei de me sabotar" é como um abraço de um amigo nos dias difíceis, e, como um bom amigo, está aqui para te dizer: "Você consegue!"';
-          // Limitar a sinopse inicial a 200 caracteres
         sinopseLivro2.textContent = sinopseCompletaLivro1.substring(0, 200) + '...';
         const buttonLivro2 = document.createElement('button');
         buttonLivro2.textContent = 'Ver Mais';
@@ -173,24 +179,16 @@ document.addEventListener("DOMContentLoaded", function () {
             sinopse.setAttribute('data-state', 'completa');
             button.textContent = 'Ver Menos';
         } else {
-            sinopse.textContent = sinopse.textContent.substring(0, 200) + '...'; // Mostrar apenas os primeiros 150 caracteres da sinopse
+            sinopse.textContent = sinopse.textContent.substring(0, 200) + '...';
             sinopse.setAttribute('data-state', 'resumida');
             button.textContent = 'Ver Mais';
         }
     }
 
-    // Função para verificar se uma string contém apenas letras e espaços em branco
-    function contemApenasLetras(string) {
-        return /^[a-zA-Z\s]+$/.test(string);
-    }
-
-    // Chame a função para definir os detalhes dos livros pelo administrador
     definirDetalhesLivros();
-
-    // Chame a função para atualizar as opções do formulário de livros
     atualizarOpcoesLivros();
 
-    // Adicione um evento de envio para o formulário
+    //Evento de envio para o formulário
     document.getElementById('comentarios-form').addEventListener('submit', function (event) {
         event.preventDefault();
     
@@ -202,7 +200,6 @@ document.addEventListener("DOMContentLoaded", function () {
             adicionarComentario(nome, livro, texto);
             document.getElementById('nome').value = '';
             document.getElementById('comentario').value = '';
-            // Atualize as opções do formulário de livros após adicionar o comentário
             atualizarOpcoesLivros();
         }
     });
