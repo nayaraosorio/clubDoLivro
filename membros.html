@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="membros.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,16 +49,16 @@ Esta é a sua chance de brilhar e compartilhar sua paixão pela leitura. Não se
 </div>
 
           
-    <form>
+    <form onsubmit="return validarFormulario();">
         <h2 class="subtitle">Sinta-se à vontade para preencher o formulário abaixo e se apresentar para a nossa incrível comunidade de leitores. </h2>
 
-        <label for="nome">Nome:</label>
+        <label for="nome">Nome*:</label>
         <input type="text" id="nome" name="nome" required><br>
 
         <label for="foto">Foto:</label>
         <input type="file" id="foto" name="foto" accept="image/*"><br>
 
-        <label for="generos">Gêneros Literários Preferidos:</label>
+        <label for="generos">Gêneros Literários Preferidos*:</label>
         <input type="text" id="generos" name="generos" required><br>
 
         <label for="twitter">Link do Twitter:</label>
@@ -69,11 +70,12 @@ Esta é a sua chance de brilhar e compartilhar sua paixão pela leitura. Não se
         <label for="facebook">Link do Facebook:</label>
         <input type="text" id="facebook" name="facebook"><br>
 
-        <label for="apresentacao">Apresentação:</label><br>
-        <textarea id="apresentacao" name="apresentacao" rows="4" cols="50"></textarea><br>
-
+        <label for="apresentacao">Apresentação*:</label><br>
+        <textarea id="apresentacao" name="apresentacao" rows="4" cols="30"></textarea><br>
+        <p>Campos marcados com * são obrigatórios.</p>
         <input type="submit" value="Enviar">
     </form>
+    
     
 
 <div class="member-card" id="member-card">
@@ -102,8 +104,8 @@ Esta é a sua chance de brilhar e compartilhar sua paixão pela leitura. Não se
 </div>
 
 <div class="member-card">
-    <img src="foto2.jpg" alt="Membro 3">
-    <h2>Nome do Membro 2</h2>
+    <img src="foto3.jpg" alt="Membro 3">
+    <h2>Nome do Membro 3</h2>
     <p>Gêneros Literários Preferidos: Fantasia, Ficção Científica</p>
     <div class="social-links">
         <a href="https://www.facebook.com/membro1" target="_blank">Facebook</a>
