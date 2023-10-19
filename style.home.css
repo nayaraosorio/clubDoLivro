@@ -18,11 +18,11 @@ body {
     }
 
     .slider-item {
-      size: 100px;
+      height: 30%;
   
     }
 
-  .slider{
+  .slider {
       overflow: hidden;
       
   

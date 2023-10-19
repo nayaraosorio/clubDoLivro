@@ -6,10 +6,10 @@ setInterval( function(){
     contador++;
 
 
-    if(counter > 5 ) {
+    if(contador > 4) {
         contador = 1;
     }
-}, 3000 );
+}, 2000 );
 
 
 
