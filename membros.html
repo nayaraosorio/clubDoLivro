@@ -20,7 +20,7 @@
 <body>
   <header>
     <section class="login"><a href="/login.html"><ion-icon name="person-circle-outline"></ion-icon>Entre ou<br>Cadastre-se</a></section>
-    <h1><img src="imagens/logoClubeDoLivro.png"alt="Logo de Clube do Livro" width="200"></h1>
+    <h1><img src="imagens/logoClubeDoLivro.png" alt="Logo de Clube do Livro" width="200"></h1>
     <nav>
       <ul>
           <li><a href="home.3.html">Home</a></li>
@@ -55,7 +55,7 @@ Esta é a sua chance de brilhar e compartilhar sua paixão pela leitura. Não se
         <label for="nome">Nome*:</label>
         <input type="text" id="nome" name="nome" required><br>
 
-        <label for="foto">Foto:</label>
+        <label for="foto">Foto*:</label>
         <input type="file" id="foto" name="foto" accept="image/*"><br>
 
         <label for="generos">Gêneros Literários Preferidos*:</label>
@@ -72,51 +72,16 @@ Esta é a sua chance de brilhar e compartilhar sua paixão pela leitura. Não se
 
         <label for="apresentacao">Apresentação*:</label><br>
         <textarea id="apresentacao" name="apresentacao" rows="4" cols="30"></textarea><br>
-        <p>Campos marcados com * são obrigatórios.</p>
+        <b>Campos marcados com * são obrigatórios.</b>
+        <br>
         <input type="submit" value="Enviar">
     </form>
     
     
 
-<div class="member-card" id="member-card">
-    <img id="member-photo" src="foto1.jpg" alt="Membro 1">
-    <h2>Nome do Membro 1</h2>
-    <p>Gêneros Literários Preferidos: Romance, Mistério</p>
-    <div class="social-links">
-        <a href="https://www.facebook.com/membro1" target="_blank">Facebook</a>
-        <a href="https://twitter.com/membro1" target="_blank">Twitter</a>
-        <a href="https://www.instagram.com/membro1" target="_blank">Instagram</a>
-    </div>
-    <p>Apresentação: Aqui está uma breve descrição do Membro .</p>
-</div>
-
-
-<div class="member-card">
-    <img src="foto2.jpg" alt="Membro 2">
-    <h2>Nome do Membro 2</h2>
-    <p>Gêneros Literários Preferidos: Fantasia, Ficção Científica</p>
-    <div class="social-links">
-        <a href="https://www.facebook.com/membro1" target="_blank">Facebook</a>
-        <a href="https://twitter.com/membro1" target="_blank">Twitter</a>
-        <a href="https://www.instagram.com/membro1" target="_blank">Instagram</a>
-    </div>
-    <p>Apresentação: Aqui está uma breve descrição do Membro 2.</p>
-</div>
-
-<div class="member-card">
-    <img src="foto3.jpg" alt="Membro 3">
-    <h2>Nome do Membro 3</h2>
-    <p>Gêneros Literários Preferidos: Fantasia, Ficção Científica</p>
-    <div class="social-links">
-        <a href="https://www.facebook.com/membro1" target="_blank">Facebook</a>
-        <a href="https://twitter.com/membro1" target="_blank">Twitter</a>
-        <a href="https://www.instagram.com/membro1" target="_blank">Instagram</a>
-    </div>
-    <p>Apresentação: Aqui está uma breve descrição do Membro 3.</p>
-</div>
-
-    
-<!-- Adicione mais membros conforme necessário -->
+    <div id="members-container">
+        <!-- Os cards de membros serão adicionados aqui dinamicamente -->
+      </div>
 
 
 

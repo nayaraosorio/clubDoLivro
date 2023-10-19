@@ -15,8 +15,6 @@ body {
     margin-right: auto; /* Alinha o texto à esquerda */
 }
 
-
-
 form {
     background: #fff;
     border-radius: 22px; /* Adiciona bordas arredondadas */
@@ -26,7 +24,6 @@ form {
     max-width: 30%; /* Largura máxima para o texto */
     margin: 20px auto; /*Define uma margem externa de 20 pixels em todas as direções (topo, direita, baixo e esquerda)*/
 }
-
 
 
 input[type="text"], input[type="url"], input[type="file"], textarea {
@@ -56,45 +53,62 @@ input[type="submit"]:hover {
 }
 
 
+/* Container para os cards de membro */
+#members-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha quando não couberem mais na largura da tela */
+    justify-content: space-between; /* Distribui os cards igualmente ao longo do contêiner horizontalmente */
+}
+
+/* Estilo para cada card de membro */
 .member-card {
     border: 5px solid #ccc;
     padding: 20px;
     margin: 10px;
-    width: 300px; /*Define a largura dos elementos*/
-    display: inline-block; /*Permite que os elementos com a classe .member-card se comportem como elementos em linha, permitindo que eles fiquem lado a lado horizontalmente.*/
+    width: 300px; /* Pode ajustar a largura conforme necessário */
     text-align: center;
+    box-sizing: border-box; /* Inclui o preenchimento e a borda na largura total do card */
 }
+
 .member-card img {
-    max-width: 100%; /*Garante que as imagens dentro dos elementos com a classe .member-card não excedam a largura do próprio elemento pai, mantendo-as responsivas.*/
+    max-width: 100%;
+    height: auto;
     border-radius: 50%;
 }
-.social-links {
-    margin-top: 10px;
-}
-.social-links a {
-    margin: 5px;
-    color: #0077B5;
-    text-decoration: none; /*Remove a decoração de sublinhado dos links, tornando-os mais legíveis.*/
-}
+
 
 /* Estilos para telas pequenas (smartphones) */
-
 @media (max-width: 480px) {
+
+    /* Estilos para o formulário */
     form {
-        max-width: 80%;
-        padding: 10px;
+        max-width: 80%; /* Aumente a largura do formulário para ocupar toda a largura da tela */
+        padding: 10px; /* Reduza o preenchimento para economizar espaço */
         margin: 10px auto;
     }
 
-    input[type="text"], input[type="url"], input[type="file"], {
-        width: 100%;
+    input[type="text"], input[type="url"], input[type="file"], textarea {
+        width: 40%; /* Expanda a largura dos campos de entrada para a largura total da tela */
         margin-bottom: 10px;
-        
     }
 
     input[type="submit"] {
-        width: 100%;
-        font-size: 1em;
-        height: 20px;
+        width: 40%; /* Expanda a largura do botão de envio para a largura total da tela */
+        font-size: 1em; /* Reduza o tamanho da fonte do botão */
+        height: 30px; /* Aumente a altura do botão */
+    }
+
+    /* Estilos para os cards de membro */
+    .member-card {
+        width: 40%; /* Expanda a largura dos cards para a largura total da tela */
+        margin: 10px auto; /* Aumente a margem superior e inferior para criar espaço entre os cards */
+        padding: 10px; /* Adicione preenchimento interno para criar espaço entre os elementos dentro dos cards */
+        box-sizing: border-box; /* Inclui o preenchimento e a borda na largura total do card */
+        margin-left: 1%; /* Adicione margem à esquerda para evitar que os cards fiquem colados no lado esquerdo */
+        margin-right: 1%; /* Adicione margem à direita para evitar que os cards fiquem colados no lado direito */
+        
+
     }
 }
+
+
