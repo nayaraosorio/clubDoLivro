@@ -17,6 +17,15 @@ body {
 
     }
 
+    .slider {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Ajuste a altura conforme necessário */
+      overflow: hidden;
+    }
+    
+
     .slider-item {
       height: 30%;
   
