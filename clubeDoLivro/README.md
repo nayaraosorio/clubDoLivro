@@ -29,9 +29,9 @@ Bem-vindo ao repositório oficial do site do Clube do Livro! Nossa proposta é c
 - Confirmação de presença nos eventos.
 - Seção para fotos e relatos de encontros anteriores.
 
-## Fórum de discussão:
-- Fórum para troca de ideias sobre os livros lidos no clube.
-- Organização por categorias ou tópicos.
+## Destaques do Mês:
+- Espaço para troca de ideias sobre os livros lidos no clube.
+- Três livros como Destaques alterados mensalmente.
 - Incentivo à participação e interação entre os membros.
 
 Vamos garantir que o site seja responsivo e seguro para todos os usuários, além de implementar uma política de privacidade transparente.
