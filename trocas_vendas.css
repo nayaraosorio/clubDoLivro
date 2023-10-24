@@ -8,7 +8,8 @@
     display: flex;
     justify-content: center;
     align-items: center; 
-    padding: 0 10%;
+    padding: 2% 5%;
+    color: rgb(94, 90, 90);
     
 
 }   
@@ -32,17 +33,57 @@
     
 }
 
+/* novo codigo */
 
-.card-area {
+body{
+    background-color: #E3E7E8;
+    font-family: system-ui;
+}
+.container-compras {
+    width: 100%;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    background-color: #FEDCD2;
+   
+}
+.shopping-area{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 5%;
+    color: rgb(94, 90, 90);  
+}
+
+div .shopping{
+    position: relative;
+    text-align: right;
+}
+div .shopping img{
+    width: 40px;
+}
+div .shopping span{
+    background: red;
+    border-radius: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -10px;
+    left: 80%;
+    left: -15px;
+    padding: 3px 10px;
+}
+.list{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     list-style: none;
     text-align: center;
+    padding: 2% 5%;
 }
-
-.card-livro { 
+.list .item{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -53,18 +94,25 @@
     height: 350px;
     background-color: #fff;
     border-radius: 10px;
+    margin-bottom: 50px;
 }
-
-.card-livro img {
-    width: 120px;
-    height: 130px;
+.list .item img{
+    width: 90%;
+    height: 430px;
+    object-fit: cover;
 }
-
-.card-livro p {
+.list .item .title{
+    font-weight: 600;
+    margin-top: 10px;
+}
+.list .item .price{
+    margin: 10px;
+}
+.descricao {
     font-size: 12px;
+    margin: 10px;
 }
-
-.btn-botton {
+.list .item button{
     background-color: #8fd8d2;
     border: none;
     margin: 10px;
@@ -74,22 +122,122 @@
     cursor: pointer;
     transition: 0.3s;
 }
-
-.btn-botton:hover {
-
+.list .item button:hover{
     background-color: #4ac9be;
 
 }
-.card-livro h4 {
-    color: rgb(94, 90, 90);
+.card{
+    position: fixed;
+    top:0;
+    left: 100%;
+    width: 500px;
+    background-color: #df744a; 
+    height: 100vh;
+    transition: 0.5s;
+}
+.active .card{
+    left: calc(100% - 500px);
+}
+.active .container{
+   transform: translateX(-200px);
+}
+.card h1{
+    color: #8fd8d2;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.card .checkOut{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.card .checkOut div{
+    background-color: #FEDCD2;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.card .checkOut div:nth-child(2){
+    background-color: #1C1F25;
+    color: #fff;
+}
+.listCard li{
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #fff;
+    row-gap: 10px;
+}
+.listCard li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listCard li img{
+    width: 90%;
+}
+.listCard li button{
+    background-color: #fff5;
+    border: none;
+}
+.listCard .count{
+    margin: 0 10px;
 }
 
-.card-livro p {
-    color: rgb(94, 90, 90);
-}
+/* text area */ 
 
-.classificacoes  {
-    font-size: 25px;
+.area-de-envio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+    background-color: #8fd8d2;
+}
+.trocar, .doar {
+    width: 500px;
+    height: 230px;
     text-align: center;
-    color: rgb(94, 90, 90);
+    display: flex;
+    flex-direction: column;
 }
+
+.area-de-envio label {
+    margin: 10px;
+    font-weight: bold;
+    color: #1C1F25;
+    
+}
+
+.area-de-envio textarea{
+    border-radius: 20px;
+    border-color: none;
+    outline:none;
+}
+
+.area-de-envio button {
+    text-align: center;
+    margin: auto;
+    background-color: #df744a;
+    border: none;
+   padding: 10px 80px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.area-de-envio button:hover {
+    background-color: #8f2e08;
+}
+
