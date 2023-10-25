@@ -308,7 +308,7 @@
                 <img src="imagens/${value.imagens}">
                 <div class="title">${value.name}</div>
                 <div class="descricao">${value.descricao}</div>
-                <div class="price">${value.price.toLocaleString()}</div>
+                <div class="price"> R$ ${value.price.toLocaleString()}</div>
                 <button onclick="addToCard(${key})">Comprar</button>`;
                 
             list.appendChild(newDiv);
