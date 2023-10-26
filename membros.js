@@ -3,9 +3,12 @@ function validarFormulario() {
     var generos = document.getElementById("generos").value;
     var fotoInput = document.getElementById("foto"); // Input do arquivo
     var apresentacao = document.getElementById("apresentacao").value;
+    var facebook = document.getElementById("facebook").value;
+    var twitter = document.getElementById("twitter").value;
+    var instagram = document.getElementById("instagram").value;
 
     // Verificar se os campos Nome, Gêneros Literários e Apresentação estão preenchidos
-    if (nome.trim() === "" || generos.trim() === "" || apresentacao.trim() === ""|| fotoInput.files.length === 0) {
+    if (nome.trim() === "" || generos.trim() === "" || apresentacao.trim() === "" || fotoInput.files.length === 0) {
         alert("Por favor, preencha todos os campos obrigatórios.");
         return false; // Impede o envio do formulário
     }
@@ -35,38 +38,56 @@ function validarFormulario() {
 
     // Se todas as validações passarem, permite o envio do formulário
 
-    // Crie um novo elemento de card de membro
-    var memberCard = document.createElement("div");
-    memberCard.classList.add("member-card");
-
-    // Preencha o card com os dados do usuário
-    var fotoURL = URL.createObjectURL(fotoInput.files[0]);
-    memberCard.innerHTML = `
-        <img src="${fotoURL}" alt="Foto de ${nome}">
-        <h2>${nome}</h2>
-        <p>Gêneros Literários Preferidos: ${generos}</p>
-        <div class="social-links">
-            <a href="${facebook}" target="_blank">Facebook</a>
-            <a href="${twitter}" target="_blank">Twitter</a>
-            <a href="${instagram}" target="_blank">Instagram</a>
-        </div>
-        <p>Apresentação: ${apresentacao}</p>
-    `
-
-    // Adicione o novo card ao contêiner
-    var membersContainer = document.getElementById("members-container");
-    membersContainer.appendChild(memberCard);
-
-    // Limpe os campos do formulário após adicionar o membro
-    document.getElementById("nome").value = "";
-    document.getElementById("generos").value = "";
-    fotoInput.value = "";
-    document.getElementById("twitter").value = "";
-    document.getElementById("instagram").value = "";
-    document.getElementById("facebook").value = "";
-    document.getElementById("apresentacao").value = "";
-
-    return false; // Impede o envio do formulário
-}
+     // Crie um novo elemento de card de membro
+     var memberCard = document.createElement("div");
+     memberCard.classList.add("member-card");
+ 
+     // Preencha o card apenas com os campos preenchidos
+     var fotoURL = URL.createObjectURL(fotoInput.files[0]);
+     var cardContent = `<img src="${fotoURL}" alt="Foto de ${nome}"><h2>${nome}</h2>`;
+ 
+     if (generos) {
+         cardContent += `<p>Gêneros Literários Preferidos: ${generos}</p>`;
+     }
+ 
+     if (facebook || twitter || instagram) {
+         cardContent += "<div class='social-links'>";
+ 
+         if (facebook) {
+             cardContent += `<a href="${facebook}" target="_blank">Facebook</a>`;
+         }
+ 
+         if (twitter) {
+             cardContent += `<a href="${twitter}" target="_blank">Twitter</a>`;
+         }
+ 
+         if (instagram) {
+             cardContent += `<a href="${instagram}" target="_blank">Instagram</a>`;
+         }
+ 
+         cardContent += "</div>";
+     }
+ 
+     if (apresentacao) {
+         cardContent += `<p>Apresentação: ${apresentacao}</p>`;
+     }
+ 
+     memberCard.innerHTML = cardContent;
+ 
+     // Adicione o novo card ao contêiner
+     var membersContainer = document.getElementById("members-container");
+     membersContainer.appendChild(memberCard);
+ 
+     // Limpe os campos do formulário após adicionar o membro
+     document.getElementById("nome").value = "";
+     document.getElementById("generos").value = "";
+     fotoInput.value = "";
+     document.getElementById("twitter").value = "";
+     document.getElementById("instagram").value = "";
+     document.getElementById("facebook").value = "";
+     document.getElementById("apresentacao").value = "";
+ 
+     return false; // Impede o envio do formulário
+ }
 
 

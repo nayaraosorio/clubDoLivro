@@ -1,7 +1,7 @@
 body {
     width: 100%;
     height: 100vh;
-    background: #f3bda9;
+    background: #fedcd2;
 }
 
 .intro-text {
@@ -58,7 +58,7 @@ input[type="submit"]:hover {
     display: flex;
     flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha quando não couberem mais na largura da tela */
     justify-content: space-between; /* Distribui os cards igualmente ao longo do contêiner horizontalmente */
-}
+    }
 
 /* Estilo para cada card de membro */
 .member-card {
@@ -74,6 +74,9 @@ input[type="submit"]:hover {
     max-width: 100%;
     height: auto;
     border-radius: 50%;
+    object-fit: cover; /* Para garantir que a imagem preencha o círculo */
+    width: 100px; /* Tamanho desejado para a imagem redonda (ajuste conforme necessário) */
+    height: 100px; /* Tamanho desejado para a imagem redonda (ajuste conforme necessário) */
 }
 
 
@@ -110,5 +113,4 @@ input[type="submit"]:hover {
 
     }
 }
-
 

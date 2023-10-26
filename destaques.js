@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
             toggleSinopse(sinopseLivro1, sinopseCompletaLivro1, buttonLivro1);
         });
 
-        livro1.querySelector('img').src = '/imagens/agir-pensar-gato.jpg';
+        livro1.querySelector('img').src = 'imagens/agir-pensar-gato.jpg';
 
         // Livro 2
         const livro2 = document.getElementById('livro2');
