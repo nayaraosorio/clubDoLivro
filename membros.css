@@ -1,0 +1,116 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background: #fedcd2;
+}
+
+.intro-text {
+    font-size: 18px;    /*tamanho da fonte do texto dentro do elemento*/
+    line-height: 1.4;  /*espaçamento entre as linhas de texto*/
+    color: #333; /* Cor do texto */
+    margin-bottom: 20px; /* Espaço entre o texto e outros elementos */
+    text-align: justify; /* Justifica o texto para uma aparência mais organizada */
+    max-width: 80%; /* Largura máxima para o texto */
+    margin-left: auto; /* Alinha o texto à direita */
+    margin-right: auto; /* Alinha o texto à esquerda */
+}
+
+form {
+    background: #fff;
+    border-radius: 22px; /* Adiciona bordas arredondadas */
+    border: 5px #8fd8d2 solid; /*Define uma borda de 5 pixels de largura com cor sólida*/
+    padding: 30px; /*Adiciona um preenchimento interno de 30 pixels entre o conteúdo do elemento e sua borda.*/
+    flex: 1; /*Define o elemento como flexível em um layout flexbox, permitindo que ele ocupe todo o espaço disponível em relação a outros elementos flexíveis.*/
+    max-width: 30%; /* Largura máxima para o texto */
+    margin: 20px auto; /*Define uma margem externa de 20 pixels em todas as direções (topo, direita, baixo e esquerda)*/
+}
+
+
+input[type="text"], input[type="url"], input[type="file"], textarea {
+    min-width: 280px; /*Define a largura mínima do elemento*/
+    border-radius: 22px; /* Adiciona bordas arredondadas */
+    border: 2px #8fd8d2 solid;
+    padding: 5px; /*Adiciona um preenchimento interno de 5 pixels entre o conteúdo do elemento e a borda do elemento. Isso cria um espaço dentro do elemento.*/
+    margin: 10px; /*Define uma margem externa de 10 pixels*/
+}
+
+input[type="submit"] {
+    background: #8fd8d2;
+    width: 30%; 
+    height: 30px; /*Define a altura dos botões*/
+    border: none; /*Remove a borda dos botões, deixando-os sem borda.*/
+    border-radius: 22px; /*Adiciona cantos arredondados aos botões  com um raio de 22 pixels.*/
+    font-size: 1.2em;   /*Define o tamanho da fonte dos botões */
+    outline: none;      /*Remove a aparência da borda de foco (outline) quando um botão é clicado*/
+    cursor: pointer;  /*Altera o cursor do mouse para um ícone de ponteiro quando o mouse passa sobre os botões*/
+    transition: background-color 0.3s ease; /*Adiciona uma transição suave de 0.3 segundos à propriedade*/
+    
+}
+
+input[type="submit"]:hover {
+    background: #d7997b;  /*Define a cor de fundo dos botões quando mouse está sobre ele*/
+    
+}
+
+
+/* Container para os cards de membro */
+#members-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha quando não couberem mais na largura da tela */
+    justify-content: space-between; /* Distribui os cards igualmente ao longo do contêiner horizontalmente */
+    }
+
+/* Estilo para cada card de membro */
+.member-card {
+    border: 5px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    width: 300px; /* Pode ajustar a largura conforme necessário */
+    text-align: center;
+    box-sizing: border-box; /* Inclui o preenchimento e a borda na largura total do card */
+}
+
+.member-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover; /* Para garantir que a imagem preencha o círculo */
+    width: 100px; /* Tamanho desejado para a imagem redonda (ajuste conforme necessário) */
+    height: 100px; /* Tamanho desejado para a imagem redonda (ajuste conforme necessário) */
+}
+
+
+/* Estilos para telas pequenas (smartphones) */
+@media (max-width: 480px) {
+
+    /* Estilos para o formulário */
+    form {
+        max-width: 80%; /* Aumente a largura do formulário para ocupar toda a largura da tela */
+        padding: 10px; /* Reduza o preenchimento para economizar espaço */
+        margin: 10px auto;
+    }
+
+    input[type="text"], input[type="url"], input[type="file"], textarea {
+        width: 40%; /* Expanda a largura dos campos de entrada para a largura total da tela */
+        margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+        width: 40%; /* Expanda a largura do botão de envio para a largura total da tela */
+        font-size: 1em; /* Reduza o tamanho da fonte do botão */
+        height: 30px; /* Aumente a altura do botão */
+    }
+
+    /* Estilos para os cards de membro */
+    .member-card {
+        width: 40%; /* Expanda a largura dos cards para a largura total da tela */
+        margin: 10px auto; /* Aumente a margem superior e inferior para criar espaço entre os cards */
+        padding: 10px; /* Adicione preenchimento interno para criar espaço entre os elementos dentro dos cards */
+        box-sizing: border-box; /* Inclui o preenchimento e a borda na largura total do card */
+        margin-left: 1%; /* Adicione margem à esquerda para evitar que os cards fiquem colados no lado esquerdo */
+        margin-right: 1%; /* Adicione margem à direita para evitar que os cards fiquem colados no lado direito */
+        
+
+    }
+}
+

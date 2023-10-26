@@ -1,0 +1,204 @@
+/* Estilo para o conteúdo principal */
+.content {
+    background-color: #FEF9F6;
+    color: #000000;
+    padding: 20px;
+}
+
+/* Estilo para links no conteúdo principal */
+.content a {
+    color: #df744a;
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para destacar conteúdo */
+.destaques {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+}
+
+.destaques img {
+    max-width: 45%;
+    height: auto;
+    opacity: 0.3;
+}
+
+.subtitulo {
+    position: absolute;
+    color: #df744a;
+    padding: 10px;
+    font-size: 35px;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Estilo para cards de livros */
+.card {
+    background-color: #FEF9F6;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card button {
+    background-color: #df744a;
+    color: #FEF9F6;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #dc8239;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.card {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    border: 2px solid #dc8239;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo para formulário de comentários e imagem */
+.comentarios-form-img-container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+/* Estilo para contêiner do formulário de comentários */
+.comentarios-form-container {
+    flex: 1;
+    background-color: #FEF9F6;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para contêiner de imagem */
+.img-container {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.img-container img {
+    max-width: 500px;
+    height: auto;
+}
+
+/* Estilo para formulário de comentários */
+#comentarios-form {
+    background-color: #FEF9F6;
+    border: 2px solid #dc8239;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#comentarios-form label {
+    color: #dc8239;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#comentarios-form input[type="text"],
+#comentarios-form select,
+#comentarios-form textarea {
+    width: 100%;
+    padding: auto;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #FEF9F6;
+}
+
+#comentarios-form input[type="submit"] {
+    background-color: #df744a;
+    color: #FEF9F6;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#comentarios-form input[type="submit"]:hover {
+    background-color: #dc8239;
+}
+
+/* Estilo para área de comentários */
+.comentarios-container {
+    background-color: #F7E8DC;
+    border: 2px solid #dc8239;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.comentarios-container h2 {
+    color: #dc8239;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Estilo para comentários individuais */
+.comentario {
+    background-color: #F7E8DC;
+    border: 2px solid #dc8239;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.comentario h2 {
+    color: #dc8239;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.comentario .autor {
+    color: #dc8239;
+    font-weight: bold;
+}
+
+.comentario .texto {
+    margin-top: 5px;
+}
