@@ -88,47 +88,53 @@ input[type="submit"]:hover {
     width: 100px; /* Largura desejada para a imagem redonda (ajuste conforme necessário) */
     height: 100px; /* Altura desejada para a imagem redonda (ajuste conforme necessário) */
 }
+/* Estilo padrão para telas maiores (desktop) */
+/* Você pode adicionar outros estilos aqui para telas maiores */
 
+/* Estilo para telas menores (smartphones) */
 @media (max-width: 480px) {
+    /* Formulário */
     form {
-        background-color: #FEF9F6; /* Fundo do formulário em telas pequenas */
-        border: 2px solid #dc8239; /* Borda do formulário em telas pequenas */
-        border-radius: 10px; /* Borda arredondada em telas pequenas */
-        padding: 20px; /* Preenchimento interno do formulário em telas pequenas */
-        margin-top: 20px; /* Margem superior do formulário em telas pequenas */
+        background-color: #FEF9F6; /* Cor de fundo do formulário */
+        border: 2px solid #dc8239; /* Borda do formulário */
+        border-radius: 10px; /* Borda arredondada */
+        padding: 20px; /* Espaçamento interno do formulário */
+        margin-top: 20px; /* Margem superior do formulário */
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para o formulário */
     }
 
+    /* Rótulos */
     label {
-        font-weight: bold; /* Texto em negrito para rótulos em telas pequenas */
-        display: block; /* Define os rótulos como elementos de bloco */
-        margin-bottom: 10px; /* Espaçamento inferior dos rótulos em telas pequenas */
+        font-weight: bold; /* Texto em negrito para rótulos */
+        display: block; /* Exibir rótulos como elementos de bloco (um abaixo do outro) */
+        margin-bottom: 10px; /* Espaçamento inferior entre os rótulos */
     }
 
+    /* Campos de entrada de texto, URL, arquivo e área de texto */
     input[type="text"],
     input[type="url"],
     input[type="file"],
     textarea {
-        width: 100%; /* Largura total para elementos de entrada em telas pequenas */
-        padding: 5px; /* Preenchimento interno dos elementos de entrada em telas pequenas */
-        margin-bottom: 5px; /* Espaçamento inferior dos elementos de entrada em telas pequenas */
+        width: 100%; /* Largura total para os campos de entrada */
+        padding: 5px; /* Espaçamento interno dos campos de entrada */
+        margin-bottom: 5px; /* Espaçamento inferior entre os campos de entrada */
         border: 1px solid #ccc; /* Borda com 1 pixel de largura */
         border-radius: 5px; /* Borda arredondada */
-        background-color: #FEF9F6; /* Fundo dos elementos de entrada em telas pequenas */
+        background-color: #FEF9F6; /* Cor de fundo dos campos de entrada */
     }
 
+    /* Botão de envio */
     input[type="submit"] {
-        width: 40%; /* Expanda a largura do botão de envio para a largura total da tela em telas pequenas */
-        font-size: 1em; /* Reduza o tamanho da fonte do botão em telas pequenas */
-        height: 30px; /* Aumente a altura do botão em telas pequenas */
+        width: 40%; /* Largura de 40% da tela */
+        font-size: 1em; /* Tamanho da fonte padrão */
+        height: 30px; /* Altura do botão */
     }
 
+    /* Cartões de membro */
     .member-card {
-        width: 40%; /* Expanda a largura dos cards de membro para a largura total da tela em telas pequenas */
-        margin: 10px auto; /* Aumente a margem superior e inferior para criar espaço entre os cards em telas pequenas */
-        padding: 10px; /* Adicione preenchimento interno para criar espaço entre os elementos dentro dos cards */
-        box-sizing: border-box; /* Inclua o preenchimento e a borda na largura total dos cards */
-        margin-left: 1%; /* Adicione margem à esquerda para evitar que os cards fiquem colados no lado esquerdo */
-        margin-right: 1%; /* Adicione margem à direita para evitar que os cards fiquem colados no lado direito */
+        width: 40%; /* Largura de 40% da tela */
+        margin: 10px auto; /* Margem superior e inferior com espaçamento automático */
+        padding: 10px; /* Espaçamento interno dos cartões */
+        box-sizing: border-box; /* Incluir preenchimento e borda na largura total */
     }
 }
