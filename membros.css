@@ -4,6 +4,13 @@ body {
     background: #fedcd2;
 }
 
+h1 {
+    text-align: center;
+    color: #dc8239;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .intro-text {
     font-size: 18px;    /*tamanho da fonte do texto dentro do elemento*/
     line-height: 1.4;  /*espaçamento entre as linhas de texto*/
@@ -18,24 +25,31 @@ body {
 form {
     background: #fff;
     border-radius: 22px; /* Adiciona bordas arredondadas */
-    border: 5px #8fd8d2 solid; /*Define uma borda de 5 pixels de largura com cor sólida*/
+    border: 5px #dc8239 solid; /*Define uma borda de 5 pixels de largura com cor sólida*/
     padding: 30px; /*Adiciona um preenchimento interno de 30 pixels entre o conteúdo do elemento e sua borda.*/
     flex: 1; /*Define o elemento como flexível em um layout flexbox, permitindo que ele ocupe todo o espaço disponível em relação a outros elementos flexíveis.*/
     max-width: 30%; /* Largura máxima para o texto */
     margin: 20px auto; /*Define uma margem externa de 20 pixels em todas as direções (topo, direita, baixo e esquerda)*/
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+}
+
+.social-link {
+    margin-right: 10px; /* Adiciona uma margem à direita de cada link */
 }
 
 
 input[type="text"], input[type="url"], input[type="file"], textarea {
     min-width: 280px; /*Define a largura mínima do elemento*/
     border-radius: 22px; /* Adiciona bordas arredondadas */
-    border: 2px #8fd8d2 solid;
+    border: 2px #dc8239 solid;
     padding: 5px; /*Adiciona um preenchimento interno de 5 pixels entre o conteúdo do elemento e a borda do elemento. Isso cria um espaço dentro do elemento.*/
     margin: 10px; /*Define uma margem externa de 10 pixels*/
 }
 
 input[type="submit"] {
-    background: #8fd8d2;
+    background: #dc8239;
     width: 30%; 
     height: 30px; /*Define a altura dos botões*/
     border: none; /*Remove a borda dos botões, deixando-os sem borda.*/
@@ -62,7 +76,8 @@ input[type="submit"]:hover {
 
 /* Estilo para cada card de membro */
 .member-card {
-    border: 5px solid #ccc;
+    border: 2px solid #dc8239;
+    border-radius: 22px;
     padding: 20px;
     margin: 10px;
     width: 300px; /* Pode ajustar a largura conforme necessário */
