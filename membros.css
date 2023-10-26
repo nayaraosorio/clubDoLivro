@@ -1,131 +1,132 @@
 body {
     width: 100%;
     height: 100vh;
-    background: #fedcd2;
+    background: #fedcd2; /* Fundo do corpo da página */
 }
 
 h1 {
     text-align: center;
-    color: #dc8239;
+    color: #dc8239; /* Estilo para o título principal */
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
 .intro-text {
-    font-size: 18px;    /*tamanho da fonte do texto dentro do elemento*/
-    line-height: 1.4;  /*espaçamento entre as linhas de texto*/
+    font-size: 18px; /* Tamanho da fonte do texto dentro do elemento */
+    line-height: 1.4; /* Espaçamento entre as linhas de texto */
     color: #333; /* Cor do texto */
     margin-bottom: 20px; /* Espaço entre o texto e outros elementos */
     text-align: justify; /* Justifica o texto para uma aparência mais organizada */
     max-width: 80%; /* Largura máxima para o texto */
-    margin-left: auto; /* Alinha o texto à direita */
-    margin-right: auto; /* Alinha o texto à esquerda */
+    margin: 0 auto 20px; /* Centraliza horizontalmente e adiciona margem inferior */
 }
 
 form {
-    background: #fff;
+    background: #fff; /* Fundo do formulário */
     border-radius: 22px; /* Adiciona bordas arredondadas */
-    border: 5px #dc8239 solid; /*Define uma borda de 5 pixels de largura com cor sólida*/
-    padding: 30px; /*Adiciona um preenchimento interno de 30 pixels entre o conteúdo do elemento e sua borda.*/
-    flex: 1; /*Define o elemento como flexível em um layout flexbox, permitindo que ele ocupe todo o espaço disponível em relação a outros elementos flexíveis.*/
-    max-width: 30%; /* Largura máxima para o texto */
-    margin: 20px auto; /*Define uma margem externa de 20 pixels em todas as direções (topo, direita, baixo e esquerda)*/
-    margin-top: 80px;
-    margin-bottom: 80px;
-
+    border: 5px #dc8239 solid; /* Define uma borda de 5 pixels de largura com cor sólida */
+    padding: 30px; /* Adiciona um preenchimento interno de 30 pixels entre o conteúdo do elemento e sua borda */
+    max-width: 30%; /* Largura máxima para o formulário */
+    margin: 20px auto; /* Centraliza horizontalmente e adiciona margem superior e inferior */
+    color: #dc8239; /* Cor do texto dentro do formulário */
 }
 
 .social-link {
-    margin-right: 10px; /* Adiciona uma margem à direita de cada link */
+    margin-right: 10px; /* Adiciona uma margem à direita de cada link social */
 }
 
-
-input[type="text"], input[type="url"], input[type="file"], textarea {
-    min-width: 280px; /*Define a largura mínima do elemento*/
+input[type="text"],
+input[type="url"],
+input[type="file"],
+textarea {
+    min-width: 280px; /* Define a largura mínima do elemento de entrada de texto */
     border-radius: 22px; /* Adiciona bordas arredondadas */
-    border: 2px #dc8239 solid;
-    padding: 5px; /*Adiciona um preenchimento interno de 5 pixels entre o conteúdo do elemento e a borda do elemento. Isso cria um espaço dentro do elemento.*/
-    margin: 10px; /*Define uma margem externa de 10 pixels*/
+    border: 2px solid; /* Borda com 2 pixels de largura e cor sólida */
+    padding: 5px; /* Espaçamento interno de 5 pixels entre o conteúdo e a borda */
+    margin: 10px 0; /* Margem superior e inferior de 10 pixels, margem esquerda e direita 0 */
 }
 
 input[type="submit"] {
-    background: #dc8239;
-    width: 30%; 
-    height: 30px; /*Define a altura dos botões*/
-    border: none; /*Remove a borda dos botões, deixando-os sem borda.*/
-    border-radius: 22px; /*Adiciona cantos arredondados aos botões  com um raio de 22 pixels.*/
-    font-size: 1.2em;   /*Define o tamanho da fonte dos botões */
-    outline: none;      /*Remove a aparência da borda de foco (outline) quando um botão é clicado*/
-    cursor: pointer;  /*Altera o cursor do mouse para um ícone de ponteiro quando o mouse passa sobre os botões*/
-    transition: background-color 0.3s ease; /*Adiciona uma transição suave de 0.3 segundos à propriedade*/
-    
+    background: #dc8239; /* Cor de fundo do botão de envio */
+    width: 30%; /* Largura do botão de envio */
+    height: 30px; /* Altura do botão de envio */
+    border: none; /* Remove a borda do botão */
+    border-radius: 22px; /* Adiciona bordas arredondadas com raio de 22 pixels */
+    font-size: 1.2em; /* Tamanho da fonte do botão */
+    outline: none; /* Remove a aparência da borda de foco quando o botão é clicado */
+    cursor: pointer; /* Altera o cursor do mouse para um ícone de ponteiro quando passa sobre o botão */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave à cor de fundo do botão */
 }
 
 input[type="submit"]:hover {
-    background: #d7997b;  /*Define a cor de fundo dos botões quando mouse está sobre ele*/
-    
+    background: #d7997b; /* Cor de fundo do botão de envio ao passar o mouse sobre ele */
 }
 
-
-/* Container para os cards de membro */
 #members-container {
-    display: flex;
+    display: flex; /* Define um contêiner flexível para os cards de membros */
     flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha quando não couberem mais na largura da tela */
     justify-content: space-between; /* Distribui os cards igualmente ao longo do contêiner horizontalmente */
-    }
+}
 
-/* Estilo para cada card de membro */
 .member-card {
-    border: 2px solid #dc8239;
-    border-radius: 22px;
-    padding: 20px;
-    margin: 10px;
-    width: 300px; /* Pode ajustar a largura conforme necessário */
-    text-align: center;
-    box-sizing: border-box; /* Inclui o preenchimento e a borda na largura total do card */
+    border: 2px solid #dc8239; /* Borda dos cards de membros */
+    border-radius: 22px; /* Adiciona bordas arredondadas */
+    padding: 20px; /* Preenchimento interno dos cards de membros */
+    margin: 10px; /* Margem ao redor dos cards de membros */
+    width: 300px; /* Largura dos cards de membros */
+    text-align: center; /* Alinha o texto ao centro nos cards */
+    box-sizing: border-box; /* Inclui o preenchimento e a borda na largura total dos cards */
 }
 
 .member-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
-    object-fit: cover; /* Para garantir que a imagem preencha o círculo */
-    width: 100px; /* Tamanho desejado para a imagem redonda (ajuste conforme necessário) */
-    height: 100px; /* Tamanho desejado para a imagem redonda (ajuste conforme necessário) */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do card de membro */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 50%; /* Cria uma imagem circular */
+    object-fit: cover; /* Garante que a imagem preencha o círculo */
+    width: 100px; /* Largura desejada para a imagem redonda (ajuste conforme necessário) */
+    height: 100px; /* Altura desejada para a imagem redonda (ajuste conforme necessário) */
 }
 
-
-/* Estilos para telas pequenas (smartphones) */
 @media (max-width: 480px) {
-
-    /* Estilos para o formulário */
     form {
-        max-width: 80%; /* Aumente a largura do formulário para ocupar toda a largura da tela */
-        padding: 10px; /* Reduza o preenchimento para economizar espaço */
-        margin: 10px auto;
+        background-color: #FEF9F6; /* Fundo do formulário em telas pequenas */
+        border: 2px solid #dc8239; /* Borda do formulário em telas pequenas */
+        border-radius: 10px; /* Borda arredondada em telas pequenas */
+        padding: 20px; /* Preenchimento interno do formulário em telas pequenas */
+        margin-top: 20px; /* Margem superior do formulário em telas pequenas */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para o formulário */
     }
 
-    input[type="text"], input[type="url"], input[type="file"], textarea {
-        width: 40%; /* Expanda a largura dos campos de entrada para a largura total da tela */
-        margin-bottom: 10px;
+    label {
+        font-weight: bold; /* Texto em negrito para rótulos em telas pequenas */
+        display: block; /* Define os rótulos como elementos de bloco */
+        margin-bottom: 10px; /* Espaçamento inferior dos rótulos em telas pequenas */
+    }
+
+    input[type="text"],
+    input[type="url"],
+    input[type="file"],
+    textarea {
+        width: 100%; /* Largura total para elementos de entrada em telas pequenas */
+        padding: 5px; /* Preenchimento interno dos elementos de entrada em telas pequenas */
+        margin-bottom: 5px; /* Espaçamento inferior dos elementos de entrada em telas pequenas */
+        border: 1px solid #ccc; /* Borda com 1 pixel de largura */
+        border-radius: 5px; /* Borda arredondada */
+        background-color: #FEF9F6; /* Fundo dos elementos de entrada em telas pequenas */
     }
 
     input[type="submit"] {
-        width: 40%; /* Expanda a largura do botão de envio para a largura total da tela */
-        font-size: 1em; /* Reduza o tamanho da fonte do botão */
-        height: 30px; /* Aumente a altura do botão */
+        width: 40%; /* Expanda a largura do botão de envio para a largura total da tela em telas pequenas */
+        font-size: 1em; /* Reduza o tamanho da fonte do botão em telas pequenas */
+        height: 30px; /* Aumente a altura do botão em telas pequenas */
     }
 
-    /* Estilos para os cards de membro */
     .member-card {
-        width: 40%; /* Expanda a largura dos cards para a largura total da tela */
-        margin: 10px auto; /* Aumente a margem superior e inferior para criar espaço entre os cards */
+        width: 40%; /* Expanda a largura dos cards de membro para a largura total da tela em telas pequenas */
+        margin: 10px auto; /* Aumente a margem superior e inferior para criar espaço entre os cards em telas pequenas */
         padding: 10px; /* Adicione preenchimento interno para criar espaço entre os elementos dentro dos cards */
-        box-sizing: border-box; /* Inclui o preenchimento e a borda na largura total do card */
+        box-sizing: border-box; /* Inclua o preenchimento e a borda na largura total dos cards */
         margin-left: 1%; /* Adicione margem à esquerda para evitar que os cards fiquem colados no lado esquerdo */
         margin-right: 1%; /* Adicione margem à direita para evitar que os cards fiquem colados no lado direito */
-        
-
     }
 }
-

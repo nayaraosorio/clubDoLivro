@@ -1,11 +1,10 @@
-/* Estilo Main */
-.content {
-    background-color: #FEF9F6;
-    color: #000000;
-    padding: 20px;
-}
 
 /* Estilo para links no conteúdo principal */
+body {
+    width: 100%;
+    height: 100vh;
+    background: #fedcd2; /* Fundo do corpo da página */
+}
 .content a {
     color: #df744a;
     text-decoration: none;
@@ -27,6 +26,7 @@
   .destaques img {
     max-width: 45%;
     height: auto;
+    border-radius: 10px;
     opacity: 0.3;
   }
   

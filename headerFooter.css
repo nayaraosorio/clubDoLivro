@@ -1,8 +1,10 @@
 /* Estilos gerais */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    body {
+        width: 100%;
+        height: 100vh;
+        background: #fedcd2; /* Fundo do corpo da página */
+    }
 }
 
 /* Estilo do Cabeçalho */
