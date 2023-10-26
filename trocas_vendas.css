@@ -1,39 +1,3 @@
-*{
-    font-family: Arial, sans-serif;
-}
-
-.text-club  {
-
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    padding: 2% 5%;
-    color: rgb(94, 90, 90);
-    
-
-}   
-
-.text-club h2 {
-    font-size: 30px;
-    line-height: 1.3em;
-    text-align: center;
-    color: rgb(94, 90, 90);
-}
-
-.invista {
-    font-size: 30px;
-    text-align: center;
-    color: rgb(94, 90, 90);
-}
-
-.container-shopping {
-    padding: 2% 5%;
-    background-color: #FEDCD2;
-    
-}
-
-/* novo codigo */
 
 body{
     background-color: #E3E7E8;
@@ -41,39 +5,53 @@ body{
 }
 .container-compras {
     width: 100%;
-    transition: 0.5s;
+    background-color: #FEDCD2;
     display: flex;
     flex-direction: column;
-    background-color: #FEDCD2;
-   
-}
-.shopping-area{
-    display: flex;
-    justify-content: space-between;
-    padding: 2% 5%;
-    color: rgb(94, 90, 90);  
+    align-items: center;
+    padding: 20px;
+    text-align: center;
 }
 
-div .shopping{
-    position: relative;
-    text-align: right;
+.text-club {
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 10px 0;
+    max-width: 80%;
 }
-div .shopping img{
-    width: 40px;
+
+.shopping-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #DF744A;
 }
-div .shopping span{
-    background: red;
-    border-radius: 80%;
+
+.shopping {
+    display: flex;
+    justify-content: flex-end; /* Isso alinhará os elementos no canto direito */
+    align-items: center;
+}
+
+.shopping ion-icon {
+    font-size: 30px;
+    color: #333; /* Cor do ícone */
+}
+
+.shopping .quantity {
+    background: #dc8239; /* Cor de fundo para a quantidade */
+    border-radius: 50%; /* Torna a quantidade um círculo */
+    width: 30px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    position: absolute;
-    top: -10px;
-    left: 80%;
-    left: -15px;
-    padding: 3px 10px;
+    color: #fff; /* Cor do texto da quantidade */
+    font-weight: bold; /* Texto em negrito */
 }
+
+
 .list{
     display: flex;
     justify-content: space-between;
